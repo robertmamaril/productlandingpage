@@ -1,0 +1,171 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Header styles */
+  #header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+  
+  #header-img {
+    height: 50px;
+    width: auto;
+  }
+  
+  #nav-bar {
+    display: flex;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+    text-align: center;
+  }
+  
+  .nav-link:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  /* Section styles */
+  section {
+    padding: 80px 20px;
+    margin-top: 60px; /* Offset for fixed navbar */
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .recipes-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.recipes img {
+    width: 100%;
+    max-width: 300px; /* Adjust the max-width as needed */
+    height: auto;
+}
+
+  h5 {
+    display: block;
+    font-size: .9em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+  }
+
+  h6 {
+    display: block;
+    font-size: .9em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: normal;
+    unicode-bidi: isolate;
+  }
+
+  .img-inline {
+    float: left;
+    margin-right: 15px;
+    width: 300px; /* Adjust the width as needed */
+    height: auto;
+}
+
+  /* Video Section */
+  #video {
+    width: 100%;
+    max-width: 640px;
+    margin: 20px auto;
+    display: block;
+  }
+  
+  /* Form Section */
+  #form-section {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  
+  #email {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+  }
+  
+  #submit {
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #submit:hover {
+    background-color: #555;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    #header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    #nav-bar {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .nav-link {
+      padding: 10px;
+      width: 100%;
+    }
+  }
+  
